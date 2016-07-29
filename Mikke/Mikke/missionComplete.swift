@@ -1,19 +1,24 @@
 //
-//  missionMain.swift
+//  missionComplete.swift
 //  Mikke
 //
-//  Created by Yuko Katsuda on 2016/07/27.
+//  Created by Yuko Katsuda on 2016/07/29.
 //  Copyright © 2016年 Yuko Katsuda. All rights reserved.
 //
 
 import UIKit
 
-class missionMain: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIGestureRecognizerDelegate {
+class missionComplete: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+
+    @IBOutlet var thumbView: UIImageView!
     
-    var currentImage:UIImage!
-    let toVC2Text = "from VC1"
+    var vc2Text:String?
     
-    @IBAction func cameraStart(sender: AnyObject) {
+    @IBAction func savePicture(sender: AnyObject) {
+        showAlert("", message: "保存する処理、まだ作ってないよ！ごめんね")
+    }
+    
+    @IBAction func cameraAgain(sender: AnyObject) {
         let sourceType:UIImagePickerControllerSourceType = UIImagePickerControllerSourceType.Camera
         // カメラが利用可能かチェック
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera){
@@ -31,7 +36,8 @@ class missionMain: UIViewController,UIImagePickerControllerDelegate,UINavigation
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        showAlert("", message: vc2Text!)
         // Do any additional setup after loading the view.
     }
 
@@ -44,24 +50,12 @@ class missionMain: UIViewController,UIImagePickerControllerDelegate,UINavigation
     func imagePickerController(imagePicker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            currentImage = pickedImage
+            self.thumbView.image = pickedImage
         }
-        
-        performSegueWithIdentifier("toMissionComplete",sender: nil)
-        
         
         //閉じる処理
         imagePicker.dismissViewControllerAnimated(true, completion: nil)
         
-    }
-    
-    // Segue 準備
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        /*if (segue.identifier == "toMissionComplete") {
-            let vc2: missionComplete = (segue.destinationViewController as? missionComplete)!
-            // ViewControllerのvc2Textにメッセージを設定
-            vc2.vc2Text = toVC2Text
-        }*/
     }
     
     // アラートを表示する

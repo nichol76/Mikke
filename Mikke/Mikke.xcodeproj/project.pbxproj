@@ -15,6 +15,7 @@
 		71AFB0491D4676B5008A4367 /* missionTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AFB0481D4676B5008A4367 /* missionTutorial.swift */; };
 		71AFB04B1D47AA6C008A4367 /* segueFadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AFB04A1D47AA6C008A4367 /* segueFadeTransition.swift */; };
 		71AFB04D1D47BEEA008A4367 /* missionMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AFB04C1D47BEEA008A4367 /* missionMain.swift */; };
+		71EB0FF41D4A83FC0041816A /* missionComplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB0FF31D4A83FC0041816A /* missionComplete.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		71AFB0481D4676B5008A4367 /* missionTutorial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = missionTutorial.swift; sourceTree = "<group>"; };
 		71AFB04A1D47AA6C008A4367 /* segueFadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = segueFadeTransition.swift; sourceTree = "<group>"; };
 		71AFB04C1D47BEEA008A4367 /* missionMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = missionMain.swift; sourceTree = "<group>"; };
+		71EB0FF31D4A83FC0041816A /* missionComplete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = missionComplete.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				719A28B41D4528010033F4B4 /* AppDelegate.swift */,
 				719A28B61D4528010033F4B4 /* ViewController.swift */,
 				719A28B81D4528010033F4B4 /* Main.storyboard */,
+				71EB0FF31D4A83FC0041816A /* missionComplete.swift */,
 				71AFB04C1D47BEEA008A4367 /* missionMain.swift */,
 				71AFB04A1D47AA6C008A4367 /* segueFadeTransition.swift */,
 				71AFB0481D4676B5008A4367 /* missionTutorial.swift */,
@@ -148,6 +151,7 @@
 				71AFB04D1D47BEEA008A4367 /* missionMain.swift in Sources */,
 				71AFB04B1D47AA6C008A4367 /* segueFadeTransition.swift in Sources */,
 				719A28B71D4528010033F4B4 /* ViewController.swift in Sources */,
+				71EB0FF41D4A83FC0041816A /* missionComplete.swift in Sources */,
 				71AFB0491D4676B5008A4367 /* missionTutorial.swift in Sources */,
 				719A28B51D4528010033F4B4 /* AppDelegate.swift in Sources */,
 			);
